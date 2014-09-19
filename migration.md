@@ -95,6 +95,24 @@ Também é possivel reverter para uma versão intermediaria utilizando o número
 - ```remove_index(table,column)```
 - ```execute("any SQL string")```
 
+## Resetar banco de dados
+
+Para resetar o banco de dados e recriar as migrações:
+
+``` bash
+rake db:reset
+rake db:migrate
+```
+
+Para deletar o banco de dados, criar um novo e rodar as migrações:
+
+``` bash
+rake db:drop
+rake db:create
+rake db:migrate
+```
+
+
 #### Links
 
 - [Rails Guides - Migrations](http://guides.rubyonrails.org/migrations.html)
