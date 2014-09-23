@@ -1,6 +1,6 @@
 # Upload de arquivos com o CarrierWave
 
-O Carrierwave é um *gem* para simplificar a criação de um sistema de upload de arquivos no Ruby on Rails.
+O [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) é um *gem* para simplificar a criação de um sistema de upload de arquivos no Ruby on Rails.
 
 
 ## Instalação
@@ -17,6 +17,7 @@ Instale o **gem** e depois gere um novo objeto:
 bundle install
 rails g uploader image
 ```
+
 
 Depois crie uma migração para associar as imagens a outra classe:
 
@@ -79,7 +80,28 @@ Para carregar um arquivo externo vindo de uma URL, modifique o formulario de upl
 
 No modelo onde que carrega as imagens ```models/post.rb```, adicione o ```attr_accessible :remote_image_url```. É importante usar essa variavel por que o **CarrierWave** vai automaticamente procurar o arquivo pela URL e fazer o upload e processamento.
 
+## Processamento de imagens com o MiniMagik
 
+Primeiro instale o **ImageMagick**, uma biblioteca escrita em C para processamento de imagem.
+
+```bash
+brew install imagemagick
+```
+
+Depois modifique o **Uploader**:
+
+```ruby
+class MyUploader < CarrierWave::Uploader::Base
+  include CarrierWave::MiniMagick
+
+  process :resize_to_fit => [800, 800]
+
+  version :thumb do
+    process :resize_to_fill => [200,200]
+  end
+
+end
+```
 ## Processamento de imagens com o rmagik
 
 Para fazer modificações na imagem como criar versões *thumbnail*, é possivel utilizar o **rmagick** junto com o **ImageMagick**.
@@ -115,4 +137,4 @@ Para fazer o display da imagem **thumb**:
 
 ------
 
-[voltar](../)
+[voltar](readme.md)
