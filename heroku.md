@@ -39,5 +39,16 @@ Depois modifique o arquivo ```config/enviorments/production.rb```:
 
 Or just use the ```db/seeds.db``` file.
 
+### Fixes
+
+Ao executar qualquer comando no rail a seguinte mensagem aparece antes da execução do comando:
+
+```/Users/v/.rvm/gems/ruby-2.0.0-p451/gems/bundler-1.6.5/lib/bundler/runtime.rb:222: warning: Insecure world writable dir /usr/local/heroku in PATH, mode 040777```
+
+para consertar, mude as permissões:
+
+```bash
+sudo chmod 775  /usr/local/heroku
+```
 
 

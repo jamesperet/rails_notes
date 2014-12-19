@@ -16,15 +16,16 @@ Behavior driven development
 
 2- execute o comando ```$ bundle install```.
 
-3- Execute o gerador para iniciar o cucumber em um projeto rails:
+3- Execute o comando ``rake db:test:clone`` para criar as tabelas no banco de dados de testes.
+
+4- Execute o gerador para iniciar o cucumber em um projeto rails:
 
 ```$ rails generate cucumber:install```
 
 Uma pasta chamada ```app/features``` foi criada.
 
-4- Para rodar o cucumber, utilize o comando rake: ```$ rake cucumber```
+5- Para rodar o cucumber, utilize o comando rake: ```$ cucumber features -n```
 
-cucumber features -n
 
 ### Features
 
