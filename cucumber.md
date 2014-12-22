@@ -20,7 +20,9 @@ Behavior driven development
 
 4- Execute o gerador para iniciar o cucumber em um projeto rails:
 
-```$ rails generate cucumber:install```
+``rails generate cucumber:install``
+
+``rails generate rspec:install``
 
 Uma pasta chamada ```app/features``` foi criada.
 
