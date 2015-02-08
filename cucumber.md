@@ -34,4 +34,6 @@ Uma pasta chamada ```app/features``` foi criada.
 1. Cenario
 2. Feature
 3. Steps
-4. Paths
+4. Background
+5. Paths
+6. Factories

@@ -12,6 +12,10 @@ Depois crie dois novos bancos de dados com os seguintes comandos:
 
 ``CREATE DATABASE demo_app_test``
 
+``CREATE USER demo_app_user WITH PASSWORD '1234'``
+
+``ALTER ROLE demo_app_user WITH CREATEDB``
+
 ``GRANT ALL PRIVILEGES ON DATABASE demo_app_development TO demo_app_user;``
 
 ``GRANT ALL PRIVILEGES ON DATABASE demo_app_test TO demo_app_user;``

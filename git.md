@@ -75,6 +75,22 @@ e para listar os remotes
 
 ```git remote```
 
+### Tags
+
+Tags são utilizadas para marcar versões do seu codigo.
+
+Para criar uma tag com a versão e uma mensagem, utilize o comando:
+
+```git tag -a v1.4 -m 'my version 1.4'```
+
+Para listar suas tags utilize o comando:
+
+```git tag```
+
+Para ver informações sobre uma tag: 
+
+```git show v1.4```
+
 ### Links
 
 - [12 curated git tips and workflow](http://durdn.com/blog/2012/12/05/git-12-curated-git-tips-and-workflows/)
