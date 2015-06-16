@@ -1,5 +1,7 @@
 # Postgres
 
+## Configuração do BD para projeto Rails
+
 Para criar um banco de dados postgres primeiro faça o login no banco de dados:
 
 ``$ psql --username=admin``
@@ -45,3 +47,10 @@ Por ultimo configure o arquivo ``database.yml `` com as informações de login e
 	  pool: 5
 	  username: admin
 	  password: password1
+
+## Outros comandos
+
+* ``\l`` - Listar bancos de dados
+* ``\c database_name`` - selecionar banco de dados
+* ``\d`` - Listar tabelas de um banco de dados
+* ``DROP TABLE table_name`` - Deletar uma tabela de um banco de dados

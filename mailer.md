@@ -40,6 +40,23 @@ Vamos agora criar uma novo metodo para enviar um email de boas vindas aos usuár
 	  end
 	end
 
+## Criando um view
+
+Crie os seguintes arquivos para os *Views*:
+
+* ```app/views/user_mailer/welcome_email.html.erb```
+* ```app/views/user_mailer/welcome_email.text.erb```
+
+Esses arquivos correspondem as duas versões do email, uma em HTML e outra em texto. As duas são enviadas e o programa em que o usuário está lendo o email decide qual versão mostrar.
+
+#### Links
+
+* [ActionMailer Basics - RailsGuides](http://guides.rubyonrails.org/action_mailer_basics.html) 
+
+-----------------
+
+[Index](index.md)
+
 <!-- Highlight syntax for Mou.app, insert at the bottom of the markdown document  -->
  
 <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>

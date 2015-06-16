@@ -91,6 +91,10 @@ Para ver informações sobre uma tag:
 
 ```git show v1.4```
 
+Ao usar o comando ```git push```, as **tags** não são transferidas junto com o resto do projeto. É necessario transferir cada **tag** separadamente. Exemplo:
+
+```git push origin v1.4```
+
 ### Links
 
 - [12 curated git tips and workflow](http://durdn.com/blog/2012/12/05/git-12-curated-git-tips-and-workflows/)

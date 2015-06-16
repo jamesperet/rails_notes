@@ -27,7 +27,8 @@
 22. [Helpers](helpers.md)
 23. [SimpleForm](SimpleForm.md)
 24. [Nested Model Forms](nested_model.md)
-25. [Autenticação de usuários com o Devise](devise.md)
+25. [Devise](devise.md)
+26. [Devise Invitable](devise_invitable.md)
 26. [Upload de arquivos com o CarrierWave](CarrierWave.md)
 27. [jQuery File Upload](jQuery_file_upload.md)
 28. [Testes](testes.md)
@@ -37,5 +38,10 @@
 32. [Funções de tempo](time_ago.md)
 33. [Font Custom](fontcustom.md)
 33. [Mailer](mailer.md)
+34. [Console](console.md)
+35. [Resque](resque.md)
+36. [Bash](bash.md)
+37. [Faye](faye.md)
+38. [API](API.md)
 
 *[Links de referencia](links_referencias.md)*

@@ -183,3 +183,21 @@ Neste exemplo vamos criar um log de edição das páginas do sistema.
 	end
 
 #### Traversing
+
+
+-----------------
+## Informações adicionais
+
+* [A Rule of Thumb for Strong Parameters](http://patshaughnessy.net/2014/6/16/a-rule-of-thumb-for-strong-parameters)
+
+-----------------
+
+[Index](index.md)
+
+<!-- Highlight syntax for Mou.app, insert at the bottom of the markdown document  -->
+ 
+<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/github.min.css">
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
